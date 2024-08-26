@@ -1,0 +1,82 @@
+{
+  "categories": [
+    {
+      "id": "category1",
+      "name": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "id": "widget1",
+          "name": "Cloud Accounts",
+          "type": "pie",
+          "title": "Cloud Accounts Status",
+          "data": {
+            "Connected": 120,
+            "Not Connected": 30
+          }
+        },
+        {
+          "id": "widget2",
+          "name": "Cloud Accounts Risk Assessment",
+          "type": "pie",
+          "title": "Risk Assessment",
+          "data": {
+            "Failed": 11,
+            "Warning": 25,
+            "Not Available": 6,
+            "Passed": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "category2",
+      "name": "CWPP Dashboard",
+      "widgets": [
+        {
+          "id": "widget1",
+          "name": "Cloud Accounts",
+          "type": "pie",
+          "title": "Top 5 Namespace Specific Alerts",
+          "data": {}
+        },
+        {
+          "id": "widget2",
+          "name": "Workload Alerts",
+          "type": "pie",
+          "title": "Risk Assessment",
+          "data": {}
+        }
+      ]
+    },
+    {
+      "id": "category3",
+      "name": "Registry Scan",
+      "widgets": [
+        {
+          "id": "widget1",
+          "name": "Image Risk Assessment",
+          "type": "line",
+          "title": "Image Risk Assessment Status",
+          "data": {
+            "critical": 120,
+            "high": 50,
+            "moderate": 30,
+            "low": 20
+          }
+        },
+        {
+          "id": "widget2",
+          "name": "Image Security Issue",
+          "type": "line",
+          "title": "IMage Security Issues Status",
+          "data": {
+            "Critical": 120,
+            "High": 50,
+            "Moderate": 30,
+            "Low": 20
+          }
+        }
+      ]
+    }
+  ]
+}
