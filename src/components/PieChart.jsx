@@ -31,12 +31,12 @@ ChartJS.register(totalValuePlugin);
 
 const PieChart = ({ data }) => {
   const pieData = {
-    labels: Object.keys(data).map(key => `${key}: ${data[key]}`),
+    labels: Object.keys(data).map((key) => `${key}: ${data[key]}`),
     datasets: [
       {
         data: Object.values(data),
-        backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56",'#808080'],
-        hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56",'#808080'],
+        backgroundColor: ["#4BC0C0", "#9966FF", "#FF9F40", "#808080"],
+        hoverBackgroundColor: ["#4BC0C0", "#9966FF", "#FF9F40", "#808080"],
       },
     ],
   };
@@ -86,7 +86,6 @@ const PieChart = ({ data }) => {
 
   return (
     <div style={{ display: 'flex', alignItems: 'flex-start', height:'100%' }}>
-      {/* Chart Container */}
       <div style={{ flex: 1, width:'100%', height:'100%', }}>
         <Doughnut data={pieData} options={pieOptions} />
       </div>
